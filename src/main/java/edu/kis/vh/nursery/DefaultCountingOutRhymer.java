@@ -22,7 +22,7 @@ public class DefaultCountingOutRhymer {
         return total == UNMODIFIED_TOTAL;
     }
 
-    private boolean isFull() {
+    protected boolean isFull() {
         return total == FULL_TOTAL;
     }
 
