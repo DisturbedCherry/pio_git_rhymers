@@ -7,7 +7,7 @@ public class DefaultCountingOutRhymer {
 
     private final int[] numbers = new int[NUMBERS_SIZE];
 
-    private int total = UNMODIFIED_TOTAL;
+    protected int total = UNMODIFIED_TOTAL;
 
     public int getTotal() {
         return total;
@@ -38,4 +38,7 @@ public class DefaultCountingOutRhymer {
         return numbers[total--];
     }
 
+    public void setTotal(int total) {
+        this.total = total;
+    }
 }
